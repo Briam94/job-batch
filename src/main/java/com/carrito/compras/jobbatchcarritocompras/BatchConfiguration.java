@@ -34,7 +34,7 @@ public class BatchConfiguration {
 	
 	@Autowired
 	public StepBuilderFactory stepBuilderFactory;
-	
+
 	@Bean
 	public FlatFileItemReader<CatalogoEntity> reader() throws UnexpectedInputException, ParseException, Exception{
 		FlatFileItemReader<CatalogoEntity> read = new FlatFileItemReaderBuilder<CatalogoEntity>()
