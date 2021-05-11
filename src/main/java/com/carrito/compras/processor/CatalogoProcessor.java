@@ -14,10 +14,10 @@ public class CatalogoProcessor implements ItemProcessor<CatalogoEntity, Catalogo
 	@Override
 	public CatalogoEntity process(CatalogoEntity item) throws Exception {
 		String nombre = item.getNombre() ;		
-		String marca = item.getNombre();	
+		String marca = item.getMarca();	
 		Long precio = item.getPrecio();
 		Long stock = item.getStock();		
-		String estado = item.getNombre();		
+		String estado = item.getEstado();		
 		Long descuento = item.getDescuento();
 		if(!nombre.equals("") && !marca.equals("") && precio != null && stock != null && !estado.equals("") && descuento != null
 				&& nombre != null && marca != null && estado != null) {
